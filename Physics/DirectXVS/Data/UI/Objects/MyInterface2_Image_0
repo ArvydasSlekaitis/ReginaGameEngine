@@ -1,0 +1,16 @@
+TextureName = Smile.png
+string OnLeftClick
+OnLeftClick = Script1
+ScaleX = 2
+ScaleY = 1
+Rotation = 0
+PositionX = 250
+PositionY = 250
+string OnSprite3Click
+OnSprite3Click = Script17
+ColorR = 255
+string OnSprite4Click
+OnSprite4Click = Script18
+ColorG = 255
+ColorB = 255
+ColorA = 255

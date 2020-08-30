@@ -1,0 +1,25 @@
+Floor 50 50 0 100 100
+{
+FloorTileMap 2 2
+{
+FloorTile_Flat 0 1
+FloorTile_Flat 5 1
+FloorTile_Flat 0 1
+FloorTile_Rampa 5 1 270 0.5
+}
+Wall_2D 0 0 100 0 1
+Wall_2D 0 0 0 100 1
+Wall_2D 100 0 100 100 1
+Wall_2D 100 100 0 100 1
+}
+Floor 50 50 100 100 100
+{
+FloorTileMap 1 1
+{
+FloorTile_Flat 0 1
+}
+}
+Entity EntityStatue
+{
+Position 24 0 72
+}

@@ -1,0 +1,5 @@
+{
+int myInt;
+myInt = 0;
+myInt += 10;
+}

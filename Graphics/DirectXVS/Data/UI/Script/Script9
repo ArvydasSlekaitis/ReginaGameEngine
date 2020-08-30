@@ -1,0 +1,4 @@
+{
+if ColorR >10
+ColorR -=Time*500
+}

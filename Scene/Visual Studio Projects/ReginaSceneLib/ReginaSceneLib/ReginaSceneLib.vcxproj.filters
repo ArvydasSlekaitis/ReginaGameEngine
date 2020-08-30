@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Regina">
+      <UniqueIdentifier>{dca47926-25b6-4aca-9461-de9d336de666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Regina\Scene">
+      <UniqueIdentifier>{444139bb-504c-4d07-92da-db5739e1132e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Regina\Scene\Material">
+      <UniqueIdentifier>{51f20d6d-770b-4245-be2b-7e60577c95e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Regina">
+      <UniqueIdentifier>{cb445c4b-ca16-4275-9929-af5d128b1045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Regina\Scene">
+      <UniqueIdentifier>{44a69c31-0f4b-4b20-946c-53d7d001728f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Regina\Scene\Material">
+      <UniqueIdentifier>{49756ee9-e5c8-4237-a8ec-02ae7910cc65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Regina\Scene\RenderObject">
+      <UniqueIdentifier>{4f40eb96-672a-44a7-bc41-b15a4185fd82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Regina\Scene\RenderObject">
+      <UniqueIdentifier>{e9b9d5ba-f97d-4eea-853b-ab2946618ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Regina\Misc">
+      <UniqueIdentifier>{8dbb444b-f507-48e5-9608-080b9fbcf328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Regina\Scene\RenderInstance">
+      <UniqueIdentifier>{5aada2e8-61e4-4015-a37f-33e1bc56db14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Regina\Scene\RenderInstance">
+      <UniqueIdentifier>{c3aa5a38-2706-4939-86ed-9d9341175861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Regina\Scene\Scene">
+      <UniqueIdentifier>{898b8d0b-3596-4342-a1be-5cb0f71d7faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Regina\Scene\Scene">
+      <UniqueIdentifier>{2d5ea051-9728-44af-930b-a539da2f1130}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Domains\Material\Include\CMaterial.h">
+      <Filter>Header Files\Regina\Scene\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\Material\Include\TMaterialIDGenerator.h">
+      <Filter>Header Files\Regina\Scene\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\Material\Include\TMaterialTypeGenerator.h">
+      <Filter>Header Files\Regina\Scene\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\Material\Include\CMaterialExample.h">
+      <Filter>Header Files\Regina\Scene\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\RenderObject\Include\CRenderObject.h">
+      <Filter>Header Files\Regina\Scene\RenderObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\RenderObject\Include\CRenderObject_StaticMesh.h">
+      <Filter>Header Files\Regina\Scene\RenderObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CCriticalSection.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_BadFormat.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_BadImageFormat.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_InvalidArgument.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_MissingFile.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_NullPointer.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfBounds.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfMemory.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfRange.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfVideoMemory.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_SyntaxError.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_ValueConflict.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CObjectLoader.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CObjectLoader_BasicObject.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CStringFunctions.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CThread.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\TCreateThread.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\TGroup.h">
+      <Filter>Header Files\Regina\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstance.h">
+      <Filter>Header Files\Regina\Scene\RenderInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstance_StaticMesh.h">
+      <Filter>Header Files\Regina\Scene\RenderInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstanceManager.h">
+      <Filter>Header Files\Regina\Scene\RenderInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstanceManager_StaticMesh.h">
+      <Filter>Header Files\Regina\Scene\RenderInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CGlobalScene.h">
+      <Filter>Header Files\Regina\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CScene.h">
+      <Filter>Header Files\Regina\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CScene_NonTransparent.h">
+      <Filter>Header Files\Regina\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CScene_Transparent.h">
+      <Filter>Header Files\Regina\Scene\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Domains\Material\Src\CMaterial.cpp">
+      <Filter>Source Files\Regina\Scene\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\Material\Src\CMaterialExample.cpp">
+      <Filter>Source Files\Regina\Scene\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\RenderObject\Src\CRenderObject.cpp">
+      <Filter>Source Files\Regina\Scene\RenderObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\RenderObject\Src\CRenderObject_StaticMesh.cpp">
+      <Filter>Source Files\Regina\Scene\RenderObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstance.cpp">
+      <Filter>Source Files\Regina\Scene\RenderInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstance_StaticMesh.cpp">
+      <Filter>Source Files\Regina\Scene\RenderInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstanceManager.cpp">
+      <Filter>Source Files\Regina\Scene\RenderInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstanceManager_StaticMesh.cpp">
+      <Filter>Source Files\Regina\Scene\RenderInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CGlobalScene.cpp">
+      <Filter>Source Files\Regina\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CScene.cpp">
+      <Filter>Source Files\Regina\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CScene_NonTransparent.cpp">
+      <Filter>Source Files\Regina\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CScene_Transparent.cpp">
+      <Filter>Source Files\Regina\Scene\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

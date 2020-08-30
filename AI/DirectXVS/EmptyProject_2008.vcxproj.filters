@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6d9c089b-67b0-47b5-9220-9e35dba6cc22}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Regina v1">
+      <UniqueIdentifier>{c4ceced1-7ad5-4fea-829b-40952e04b074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Regina v2">
+      <UniqueIdentifier>{75c7d6fd-0cd5-47a7-b860-7216aa6222b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Regina v2\Phisics">
+      <UniqueIdentifier>{4c6ab75d-ec19-44b8-adf6-8b58185ad575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Regina v2\Misc">
+      <UniqueIdentifier>{04436671-be71-4b4e-87e1-97d306098a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Regina v2\AI Headers">
+      <UniqueIdentifier>{ef7df988-47ab-4890-abcc-0c3f04635eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Regina v2\AI Src">
+      <UniqueIdentifier>{006607fc-9fb3-4df9-b03b-4e216244480a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\ComCtl32.Lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\ComDlg32.Lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d2d1_beta.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d10.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d10_1.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\D3D10_1_beta.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d11_beta.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d9.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dcompiler.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx10.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx10d.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx11.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx9.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx9d.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dxof.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\ddraw.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dinput8.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dsetup.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dsound.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dwrite_beta.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\DxErr.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\DxErr9.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dxgi.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dxgi_beta.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dxguid.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Gdi32.Lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Imm32.Lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Kernel32.Lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\User32.Lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Version.Lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\X3DAudio.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\xapobase.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\xapobased.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\XAPOFX.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\XInput.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\..\Phisics\Library\Regina.Phisics\Debug\Regina.Phisics.lib">
+      <Filter>Regina v2\Phisics</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomEntityCreator.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Core\DXUT.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTcamera.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Core\DXUTenum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTgui.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTguiIME.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Core\DXUTmisc.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTres.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTShapes.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity_DarkSmile.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity_Sphere.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity_Statue.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\ImeUi.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmesh.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmisc.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Engine Regina v1\C2DTexture.cpp">
+      <Filter>Regina v1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Engine Regina v1\CubeTexture.cpp">
+      <Filter>Regina v1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Engine Regina v1\Mesh.cpp">
+      <Filter>Regina v1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Engine Regina v1\ObjectInstance.cpp">
+      <Filter>Regina v1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Engine Regina v1\SimpleMesh.cpp">
+      <Filter>Regina v1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Script v1\Text.cpp">
+      <Filter>Regina v1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Engine Regina v1\TextureHandler.cpp">
+      <Filter>Regina v1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Misc\Src\Statistics.cpp">
+      <Filter>Regina v2\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Misc\Src\StatisticsData.cpp">
+      <Filter>Regina v2\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AIManager.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\BoundingCircle.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\BoundingSphere.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionDetectionManager.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionMesh.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionObject_Dynamic.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionObject_Dynamic_Data.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionObject_ParticlePhisics.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionObject_ParticlePhisics_Data.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionObject_Static.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionObject_Static_Data.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionPrimitive_Box.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CollisionPrimitive_Sphere.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Door.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Door_2D.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\EntityManager.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Floor.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\FloorTile.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\FloorTile_Flat.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\FloorTile_Rampa.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\FloorTileMap.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Line_2D.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageDispatcher.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MovingEntity.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SimpleMovingEntity.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Alignment.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Arrive.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Cohesion.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Evade.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Flee.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Flee_Distanced.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Hide.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Interpose_Entity_Entity.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Interpose_Entity_Position.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_ObstacleAvoidance.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_OffsetPursuit.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_PathFallow.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Pursuit.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Seek.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Separation.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_WallAvoidance.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehavior_Wander.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\SteeringBehaviorManager.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Trigger.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Trigger_LimitedLifetime.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Trigger_Respawning.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\TriggerRegion_Cubic.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\TriggerRegion_Cylindrical.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\TriggerRegion_Spherical.cpp">
+      <Filter>Regina v2\AI Src</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyProject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomEntityCreator.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTcamera.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTgui.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTguiIME.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTLockFreePipe.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTres.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTShapes.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity_DarkSmile.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity_Sphere.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity_Statue.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\ImeUi.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmesh.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmisc.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Misc\Include\Functions_Math.h">
+      <Filter>Regina v2\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Misc\Include\Functions_Text.h">
+      <Filter>Regina v2\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Misc\Include\Settings.h">
+      <Filter>Regina v2\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AIManager.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\BaseEntity.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\BasicMessageEnumaration.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\BasicTypeEnumaration.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\BoundingCircle.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\BoundingSphere.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionDetectionManager.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionMesh.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionObject_Dynamic.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionObject_Dynamic_Data.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionObject_ParticlePhisics.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionObject_ParticlePhisics_Data.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionObject_Static.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionObject_Static_Data.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionPrimitive.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionPrimitive_Box.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CollisionPrimitive_Sphere.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CustomTelegram.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Door.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Door_2D.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\EntityCreator.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\EntityManager.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Floor.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FloorTile.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FloorTile_Flat.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FloorTile_Rampa.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FloorTileMap.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\FSM.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Line_2D.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\MessageDispatcher.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\MovingEntity.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SelfDividingGrid_2D.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SimpleMovingEntity.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\State.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Alignment.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Arrive.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Cohesion.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Evade.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Flee.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Flee_Distanced.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Hide.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Interpose_Entity_Entity.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Interpose_Entity_Position.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_ObstacleAvoidance.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_OffsetPursuit.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_PathFallow.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Pursuit.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Seek.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Separation.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_WallAvoidance.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehavior_Wander.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SteeringBehaviorManager.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Telegram.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Trigger.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Trigger_LimitedLifetime.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Trigger_Respawning.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\TriggerRegion.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\TriggerRegion_Cubic.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\TriggerRegion_Cylindrical.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\TriggerRegion_Spherical.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Wall.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Wall_2D.h">
+      <Filter>Regina v2\AI Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EmptyProject.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+{
+int myInt;
+myInt = 0;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;
+if(myInt > 0)
+	myInt--;
+else
+	myInt++;									
+}

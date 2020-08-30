@@ -1,0 +1,5 @@
+{
+globalString globalFileName
+FileName = globalFileName
+FileName+=.txt
+}

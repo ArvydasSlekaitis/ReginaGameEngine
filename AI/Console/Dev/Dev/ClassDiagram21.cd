@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Regina::CBaseEntity" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIgAAAAIAAgAAgAAAAAAAAAAQBAAAAARAgAAAAAgA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\BaseEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CWall_2D" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\Wall_2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CBoundingCircle" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIABAACAAAAAAgAAAAIAAAAAAAAgAIAAAAAQCAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\BoundingCircle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CBoundingSphere" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAAAgAAAAIAAAAAAgAgAIAAAAAQCAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\BoundingSphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionObject_CollisionMesh" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAgAAAAAAgAAAAAAAAgAAAAAAAAAAQAAQAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionObject_CollisionMesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionObject_ParticlePhisics" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAAAAAEAAAAgAAAAAQAAgAAAAEAAAAAQAACAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionObject_ParticlePhisics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionObject_ParticlePhisics_Data" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAEAAAAgAAAAAwAAwAEAAMAAAAAAAACAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionObject_ParticlePhisics_Data.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionDetectionManager" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAAACAAAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionDetectionManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionMesh" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAAAKAAABABgAAAAAwgAAAAEAAAACAAABAwAEAQ=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionMesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionObject_CollisionMesh_Data" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAgACAAAAAAgAAAAIAgAAAAAAQAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionObject_CollisionMesh_Data.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionPrimitive" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionPrimitive.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionPrimitive_Box" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAIAAiIBAAgCEAAAAEAAAAAIAQAACACAAAAAQCgAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionPrimitive_Box.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CCollisionPrimitive_Sphere" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIIAAiAAAAgAAAAAAGAAAAAgQAAAAACAAAAAQAgAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CollisionPrimitive_Sphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CUnaryTelegram&lt;T1&gt;" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAgAAAAAAEAAAAEAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\CustomTelegram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CEntityManager" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIAAAAAAAAAEAAAAAAAAAAAAAAAAACQAAAAAAAEAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\EntityManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CFloor" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAEAAQAAAAAAAIAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\Floor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CFSM&lt;T1&gt;" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASgAAAAADABBBCAICAABAAAAAIgAAAAAAAgAQAAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\FSM.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CLine_2D" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MDoQAAAyAAAAEAAAgAAEAAhQAAAIEABAgUAAALEYAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\Line_2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CMessageDispatcher" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAICACAAAAAAQAAAQAAAAIAASAACAAAAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\MessageDispatcher.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::TSelfDividingGrid_2D&lt;T1&gt;" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACCCEAAAAARgAAAQBABAAQAAAECAARAAAABAAAw=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\SelfDividingGrid_2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CState&lt;T1&gt;" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAYAAAAAAAAAAAAEAAAAICAgAAAAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\State.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CTelegram" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAgAAAAKAAAAAACAAQAAAAAEBBAABAQQAAAIAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\Telegram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Regina::CWall" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAGAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>c:\Developing\Projektai\C++\Engine Regina v2\AI\Include\Wall.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

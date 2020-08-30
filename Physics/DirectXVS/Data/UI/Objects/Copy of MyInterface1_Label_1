@@ -1,0 +1,16 @@
+FontName = Times New Roman
+FontStyle = bold
+FontSize = 32
+PositionX = 512
+PositionY = 256
+ColorR = 255
+ColorG = 255
+ColorB = 255
+ColorA = 255
+Line = ASDASDASDASDASDASDASDASDASDA
+string OnMouseUnFocus
+OnMouseUnFocus = Script4
+string OnMouseFocus
+OnMouseFocus=Script3
+string OnFrameMove
+OnFrameMove = script5

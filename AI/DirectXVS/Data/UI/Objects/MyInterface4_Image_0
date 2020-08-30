@@ -1,0 +1,14 @@
+TextureName = UICheckBox0.png
+ScaleX = 2
+ScaleY = 2
+Rotation = 0
+string OnMouseFocus
+OnMouseFocus = Script19
+PositionX = 250
+string OnMouseUnFocus
+OnMouseUnFocus = Script20
+PositionY = 250
+ColorR = 255
+ColorG = 255
+ColorB = 255
+ColorA = 255

@@ -1,0 +1,6 @@
+{
+float tmp
+tmp = NumLines - MaxDisplayLines -1
+if DisplayLinesOff < tmp
+DisplayLinesOff += 1
+}

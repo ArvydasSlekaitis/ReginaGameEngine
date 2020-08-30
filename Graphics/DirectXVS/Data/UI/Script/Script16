@@ -1,0 +1,20 @@
+{
+if MouseFocused == 0
+{
+float dir
+if dir == 0
+{
+Sprite2ColorA += TimeElapsed*1000
+if Sprite2ColorA > 240
+dir = 1
+}
+if dir == 1
+{
+Sprite2ColorA -= TimeElapsed*1000
+if Sprite2ColorA < 15
+dir = 0
+}
+}
+else
+Sprite2ColorA = 0
+}

@@ -1,0 +1,55 @@
+///////////////////////////////////////////////////////////
+//  PhisicsManager.h
+//  Created on:      06-03-2008
+//  Last modified:   13-03-2009
+//  Original author: Arvydas Slekaitis (C)
+///////////////////////////////////////////////////////////
+
+
+#ifndef PHISICSMANAGER_H
+#define PHISICSMANAGER_H
+
+#include <ParticlePhisicsManager.h>
+#include <ParticlePhisics.h>
+#include <ForceRegistration.h>
+#include <PhisicalLinkRegistration.h>
+#include <ContactResolver.h>
+
+namespace Regina
+{
+
+class CPhisicsManager
+{
+CParticlePhisicsManager* particlePhisicsManager;
+
+unsigned minParticleID;
+unsigned maxParticleID;
+
+CPhisicsManager();
+CPhisicsManager(const CPhisicsManager&);
+
+public:
+~CPhisicsManager()'
+static CPhisicsManager* Instance();
+
+void Add(CParticlePhisics* iParticlePhisics);  //Warning! Calling this funtion, while all object with pre defined id is not loaded, may couse later loading artifacts!
+void Remove(unsigned iID);
+bool IDExist(unsigned iID) const;
+
+CParticlePhisics* ParticleFromID(unsigned iID);
+void Update(float iDuration);
+void Clear();
+void Maintenance();
+
+void SetMinIDForParticle(unsigned iMinParticleID) { assert(iMinParticleID>0);  minParticleID = iMinParticleID; }
+void SetMaxIDForParticle(unsigned iMaxParticleID) { assert(iMaxParticleID>minParticleID);  maxParticleID = iMaxParticleID; } 
+
+CParticlePhisics* LoadParticle(string iDefinition);
+};
+
+#define PhisicsManager CPhisicsManager::Instance()
+
+
+}
+
+#endif

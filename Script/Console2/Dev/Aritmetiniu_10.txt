@@ -1,0 +1,6 @@
+{
+int myInt;
+myInt = 0;
+myInt += 10;
+myInt = myInt * 10 * myInt + myInt / 10 * 15 * myInt  + myInt * 10 * myInt + myInt / 10 * 15 * myInt;
+}

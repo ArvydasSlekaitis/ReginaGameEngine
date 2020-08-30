@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>EmptyProject</ProjectName>
+    <ProjectGuid>{D3D09108-96D0-4629-88B8-122C0256058C}</ProjectGuid>
+    <RootNamespace>EmptyProject</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ReferencePath>..\..\..\..\Include;$(ReferencePath)</ReferencePath>
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ReferencePath>..\..\..\..\Include;$(ReferencePath)</ReferencePath>
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ReferencePath>..\..\..\..\Include;$(ReferencePath)</ReferencePath>
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ReferencePath>..\..\..\..\Include;$(ReferencePath)</ReferencePath>
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ReferencePath>..\..\..\..\Include;$(ReferencePath)</ReferencePath>
+    <OutDir>Profile\</OutDir>
+    <IntDir>Profile\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ReferencePath>..\..\..\..\Include;$(ReferencePath)</ReferencePath>
+    <OutDir>$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Developing\Projektai\C++\Script v1;D:\Developing\Projektai\C++\Engine Regina v2\AI\Include;D:\Developing\Projektai\C++\Engine Regina v2\Misc\Include;D:\Developing\Projektai\C++\Engine Regina v2\AI\DirectXVS;D:\Developing\Projektai\C++\Engine Regina v2\Misc;D:\Developing\Projektai\C++\Engine Regina v2\Phisics\Include;C:\Program Files\Microsoft DirectX SDK (March 2009)\Include;C:\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Core;C:\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional;D:\Developing\Projektai\C++\Engine Regina v1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)EmptyProject.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9d.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)EmptyProject.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>C:\Developing\Projektai\C++\Engine Regina v2\AI\DirectXVS;C:\Developing\Projektai\C++\Engine Regina v2\AI\Include;C:\Developing\Projektai\C++\Engine Regina v2\Misc\Include;C:\Developing\Projektai\C++\Engine Regina v2\Misc;C:\Developing\Projektai\C++\Script v1;C:\Developing\Projektai\C++\Engine Regina v2\Phisics\Src;C:\Developing\Projektai\C++\Engine Regina v2\Phisics\Include;..\..\Core;C:\Program Files\Microsoft DirectX SDK (November 2008)\Samples\C++\DXUT\Optional;C:\Program Files\Microsoft DirectX SDK (November 2008)\Samples\C++\DXUT\Core;C:\Program Files\Microsoft DirectX SDK (November 2008)\Include;C:\Developing\Projektai\C++\Engine Regina v1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)EmptyProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)EmptyProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)EmptyProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)EmptyProject.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d2d1_beta.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d10.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d10_1.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\D3D10_1_beta.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d11_beta.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3d9.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dcompiler.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx10.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx10d.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx11.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx9.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dx9d.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\d3dxof.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\ddraw.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dinput8.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dsetup.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dsound.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dwrite_beta.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\DxErr.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\DxErr9.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dxgi.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dxgi_beta.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\dxguid.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\X3DAudio.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\xapobase.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\xapobased.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\XAPOFX.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Lib\x86\XInput.lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\ComCtl32.Lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\ComDlg32.Lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Gdi32.Lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Imm32.Lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Kernel32.Lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\User32.Lib" />
+    <Library Include="..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows\v6.0A\Lib\Version.Lib" />
+    <Library Include="..\..\Phisics\Library\Regina.Phisics\Debug\Regina.Phisics.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Core\DXUT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Core\DXUTenum.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Core\DXUTmisc.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTcamera.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTgui.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTguiIME.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTres.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTsettingsdlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTShapes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\ImeUi.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmesh.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmisc.cpp" />
+    <ClCompile Include="..\..\..\Engine Regina v1\C2DTexture.cpp" />
+    <ClCompile Include="..\..\..\Engine Regina v1\CubeTexture.cpp" />
+    <ClCompile Include="..\..\..\Engine Regina v1\Mesh.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Developing\Projektai\C++\Engine Regina v2\Phisics\DirectXVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Engine Regina v1\ObjectInstance.cpp" />
+    <ClCompile Include="..\..\..\Engine Regina v1\SimpleMesh.cpp" />
+    <ClCompile Include="..\..\..\Engine Regina v1\TextureHandler.cpp" />
+    <ClCompile Include="..\..\..\Script v1\Text.cpp" />
+    <ClCompile Include="..\..\Misc\Src\Statistics.cpp" />
+    <ClCompile Include="..\..\Misc\Src\StatisticsData.cpp" />
+    <ClCompile Include="..\Src\AIManager.cpp" />
+    <ClCompile Include="..\Src\BoundingCircle.cpp" />
+    <ClCompile Include="..\Src\BoundingSphere.cpp" />
+    <ClCompile Include="..\Src\CollisionDetectionManager.cpp" />
+    <ClCompile Include="..\Src\CollisionMesh.cpp" />
+    <ClCompile Include="..\Src\CollisionObject_Dynamic.cpp" />
+    <ClCompile Include="..\Src\CollisionObject_Dynamic_Data.cpp" />
+    <ClCompile Include="..\Src\CollisionObject_ParticlePhisics.cpp" />
+    <ClCompile Include="..\Src\CollisionObject_ParticlePhisics_Data.cpp" />
+    <ClCompile Include="..\Src\CollisionObject_Static.cpp" />
+    <ClCompile Include="..\Src\CollisionObject_Static_Data.cpp" />
+    <ClCompile Include="..\Src\CollisionPrimitive_Box.cpp" />
+    <ClCompile Include="..\Src\CollisionPrimitive_Sphere.cpp" />
+    <ClCompile Include="..\Src\Door.cpp" />
+    <ClCompile Include="..\Src\Door_2D.cpp" />
+    <ClCompile Include="..\Src\EntityManager.cpp" />
+    <ClCompile Include="..\Src\Floor.cpp" />
+    <ClCompile Include="..\Src\FloorTile.cpp" />
+    <ClCompile Include="..\Src\FloorTileMap.cpp" />
+    <ClCompile Include="..\Src\FloorTile_Flat.cpp" />
+    <ClCompile Include="..\Src\FloorTile_Rampa.cpp" />
+    <ClCompile Include="..\Src\Line_2D.cpp" />
+    <ClCompile Include="..\Src\MessageDispatcher.cpp" />
+    <ClCompile Include="..\Src\MovingEntity.cpp" />
+    <ClCompile Include="..\Src\SimpleMovingEntity.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior.cpp" />
+    <ClCompile Include="..\Src\SteeringBehaviorManager.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Alignment.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Arrive.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Cohesion.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Evade.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Flee.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Flee_Distanced.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Hide.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Interpose_Entity_Entity.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Interpose_Entity_Position.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_ObstacleAvoidance.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_OffsetPursuit.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_PathFallow.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Pursuit.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Seek.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Separation.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_WallAvoidance.cpp" />
+    <ClCompile Include="..\Src\SteeringBehavior_Wander.cpp" />
+    <ClCompile Include="..\Src\Trigger.cpp" />
+    <ClCompile Include="..\Src\TriggerRegion_Cubic.cpp" />
+    <ClCompile Include="..\Src\TriggerRegion_Cylindrical.cpp" />
+    <ClCompile Include="..\Src\TriggerRegion_Spherical.cpp" />
+    <ClCompile Include="..\Src\Trigger_LimitedLifetime.cpp" />
+    <ClCompile Include="..\Src\Trigger_Respawning.cpp" />
+    <ClCompile Include="CustomEntityCreator.cpp" />
+    <ClCompile Include="EmptyProject.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\Microsoft DirectX SDK (November 2008)\Samples\C++\DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Entity_DarkSmile.cpp" />
+    <ClCompile Include="Entity_Sphere.cpp" />
+    <ClCompile Include="Entity_Statue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTcamera.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTgui.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTguiIME.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTLockFreePipe.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTres.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTsettingsdlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\DXUTShapes.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\ImeUi.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmesh.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files\Microsoft DirectX SDK (March 2009)\Samples\C++\DXUT\Optional\SDKmisc.h" />
+    <ClInclude Include="..\..\Misc\Include\Functions_Math.h" />
+    <ClInclude Include="..\..\Misc\Include\Functions_Text.h" />
+    <ClInclude Include="..\..\Misc\Include\Settings.h" />
+    <ClInclude Include="..\Include\AIManager.h" />
+    <ClInclude Include="..\Include\BaseEntity.h" />
+    <ClInclude Include="..\Include\BasicMessageEnumaration.h" />
+    <ClInclude Include="..\Include\BasicTypeEnumaration.h" />
+    <ClInclude Include="..\Include\BoundingCircle.h" />
+    <ClInclude Include="..\Include\BoundingSphere.h" />
+    <ClInclude Include="..\Include\CollisionDetectionManager.h" />
+    <ClInclude Include="..\Include\CollisionMesh.h" />
+    <ClInclude Include="..\Include\CollisionObject_Dynamic.h" />
+    <ClInclude Include="..\Include\CollisionObject_Dynamic_Data.h" />
+    <ClInclude Include="..\Include\CollisionObject_ParticlePhisics.h" />
+    <ClInclude Include="..\Include\CollisionObject_ParticlePhisics_Data.h" />
+    <ClInclude Include="..\Include\CollisionObject_Static.h" />
+    <ClInclude Include="..\Include\CollisionObject_Static_Data.h" />
+    <ClInclude Include="..\Include\CollisionPrimitive.h" />
+    <ClInclude Include="..\Include\CollisionPrimitive_Box.h" />
+    <ClInclude Include="..\Include\CollisionPrimitive_Sphere.h" />
+    <ClInclude Include="..\Include\CustomTelegram.h" />
+    <ClInclude Include="..\Include\Door.h" />
+    <ClInclude Include="..\Include\Door_2D.h" />
+    <ClInclude Include="..\Include\EntityCreator.h" />
+    <ClInclude Include="..\Include\EntityManager.h" />
+    <ClInclude Include="..\Include\Floor.h" />
+    <ClInclude Include="..\Include\FloorTile.h" />
+    <ClInclude Include="..\Include\FloorTileMap.h" />
+    <ClInclude Include="..\Include\FloorTile_Flat.h" />
+    <ClInclude Include="..\Include\FloorTile_Rampa.h" />
+    <ClInclude Include="..\Include\FSM.h" />
+    <ClInclude Include="..\Include\Line_2D.h" />
+    <ClInclude Include="..\Include\MessageDispatcher.h" />
+    <ClInclude Include="..\Include\MovingEntity.h" />
+    <ClInclude Include="..\Include\SelfDividingGrid_2D.h" />
+    <ClInclude Include="..\Include\SimpleMovingEntity.h" />
+    <ClInclude Include="..\Include\State.h" />
+    <ClInclude Include="..\Include\SteeringBehavior.h" />
+    <ClInclude Include="..\Include\SteeringBehaviorManager.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Alignment.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Arrive.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Cohesion.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Evade.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Flee.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Flee_Distanced.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Hide.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Interpose_Entity_Entity.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Interpose_Entity_Position.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_ObstacleAvoidance.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_OffsetPursuit.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_PathFallow.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Pursuit.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Seek.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Separation.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_WallAvoidance.h" />
+    <ClInclude Include="..\Include\SteeringBehavior_Wander.h" />
+    <ClInclude Include="..\Include\Telegram.h" />
+    <ClInclude Include="..\Include\Trigger.h" />
+    <ClInclude Include="..\Include\TriggerRegion.h" />
+    <ClInclude Include="..\Include\TriggerRegion_Cubic.h" />
+    <ClInclude Include="..\Include\TriggerRegion_Cylindrical.h" />
+    <ClInclude Include="..\Include\TriggerRegion_Spherical.h" />
+    <ClInclude Include="..\Include\Trigger_LimitedLifetime.h" />
+    <ClInclude Include="..\Include\Trigger_Respawning.h" />
+    <ClInclude Include="..\Include\Wall.h" />
+    <ClInclude Include="..\Include\Wall_2D.h" />
+    <ClInclude Include="CustomEntityCreator.h" />
+    <ClInclude Include="Entity_DarkSmile.h" />
+    <ClInclude Include="Entity_Sphere.h" />
+    <ClInclude Include="Entity_Statue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EmptyProject.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

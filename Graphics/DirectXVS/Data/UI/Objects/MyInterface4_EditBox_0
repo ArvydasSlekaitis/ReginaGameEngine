@@ -1,0 +1,31 @@
+Text = Arvydas
+string OnLeftClick
+OnLeftClick = EditBoxScriptLC
+FontName = Arial
+FontStyle = none
+string OnFrameMove
+OnFrameMove = EditBoxScriptFM
+FontSize = 16
+PositionX = 350
+PositionY = 40
+FontColorR = 0
+FontColorG = 0
+FontColorB = 0
+FontColorA = 255
+Sprite1Name = UIEditBox0.png
+Sprite1Rotation = 0
+Sprite1ScaleX = 0.5
+Sprite1ScaleY = 0.5
+Sprite1ColorR = 255
+Sprite1ColorG = 255
+Sprite1ColorB = 255
+Sprite1ColorA = 255
+Sprite2Name = UIEditBox1.png
+Sprite2Rotation = 0
+Sprite2ScaleX = 0.5
+Sprite2ScaleY = 0.5
+Sprite2ColorR = 255
+Sprite2ColorG = 255
+Sprite2ColorB = 255
+Sprite2ColorA = 255
+MouseFocused = 1

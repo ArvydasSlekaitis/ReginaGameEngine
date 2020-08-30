@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF686B33-F6D0-4BA3-9CFB-4F808C348BBC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ReginaSceneLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\Scene\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\RenderInstance\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Misc\Release\Version_Working\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\RenderObject\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\Material\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\Scene\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\RenderInstance\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Misc\Release\Version_Working\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\RenderObject\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\Arvydas\Development\Projects\Engine Regina v2\Graphics\Scene\Domains\Material\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CCriticalSection.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_BadFormat.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_BadImageFormat.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_InvalidArgument.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_MissingFile.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_NullPointer.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfBounds.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfMemory.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfRange.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_OutOfVideoMemory.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_SyntaxError.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CException_ValueConflict.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CObjectLoader.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CObjectLoader_BasicObject.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CStringFunctions.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\CThread.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\TCreateThread.h" />
+    <ClInclude Include="..\..\..\..\..\Misc\Release\Version_Working\Include\TGroup.h" />
+    <ClInclude Include="..\..\..\Domains\Material\Include\CMaterial.h" />
+    <ClInclude Include="..\..\..\Domains\Material\Include\CMaterialExample.h" />
+    <ClInclude Include="..\..\..\Domains\Material\Include\TMaterialIDGenerator.h" />
+    <ClInclude Include="..\..\..\Domains\Material\Include\TMaterialTypeGenerator.h" />
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstance.h" />
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstanceManager.h" />
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstanceManager_StaticMesh.h" />
+    <ClInclude Include="..\..\..\Domains\RenderInstance\Include\CRenderInstance_StaticMesh.h" />
+    <ClInclude Include="..\..\..\Domains\RenderObject\Include\CRenderObject.h" />
+    <ClInclude Include="..\..\..\Domains\RenderObject\Include\CRenderObject_StaticMesh.h" />
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CGlobalScene.h" />
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CScene.h" />
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CScene_NonTransparent.h" />
+    <ClInclude Include="..\..\..\Domains\Scene\Include\CScene_Transparent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Domains\Material\Src\CMaterial.cpp" />
+    <ClCompile Include="..\..\..\Domains\Material\Src\CMaterialExample.cpp" />
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstance.cpp" />
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstanceManager.cpp" />
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstanceManager_StaticMesh.cpp" />
+    <ClCompile Include="..\..\..\Domains\RenderInstance\Src\CRenderInstance_StaticMesh.cpp" />
+    <ClCompile Include="..\..\..\Domains\RenderObject\Src\CRenderObject.cpp" />
+    <ClCompile Include="..\..\..\Domains\RenderObject\Src\CRenderObject_StaticMesh.cpp" />
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CGlobalScene.cpp" />
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CScene.cpp" />
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CScene_NonTransparent.cpp" />
+    <ClCompile Include="..\..\..\Domains\Scene\Src\CScene_Transparent.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

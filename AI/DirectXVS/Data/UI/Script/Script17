@@ -1,0 +1,4 @@
+{
+if DisplayLinesOff > 0
+DisplayLinesOff -= 1
+}

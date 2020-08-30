@@ -1,0 +1,13 @@
+{
+if ScaleX<3
+{
+ScaleX+=Time*0.5
+ScaleY+=Time*0.5
+}
+else
+{
+ScaleX=1
+ScaleY=1
+}
+Rotation+=Time
+}

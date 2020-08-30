@@ -1,0 +1,12 @@
+Line = Laba Diena
+string OnLeftClick
+OnLeftClick = Script1
+FontName = Arial
+FontStyle = none
+FontSize = 16
+PositionX = 456
+PositionY = 700
+ColorR = 255
+ColorG = 0
+ColorB = 255
+ColorA = 255

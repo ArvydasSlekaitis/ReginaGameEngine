@@ -1,0 +1,14 @@
+PositionX = 512
+PositionY = 256
+ColorR = 255
+ColorG = 255
+ColorB = 255
+ColorA = 255
+ScaleX = 2
+ScaleY = 2
+Rotation = 0
+TextureName = Smile.png
+string OnFrameMove
+string OnLeftClick
+OnFrameMove = Script2
+OnLeftClick = Script1

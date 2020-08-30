@@ -1,0 +1,6 @@
+{
+if Checked == 0
+Checked = 1
+else
+Checked = 0
+}

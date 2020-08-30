@@ -1,0 +1,31 @@
+Text = none
+string OnLeftClick
+OnLeftClick = Script15
+FontName = Arial
+FontStyle = none
+string OnFrameMove
+OnFrameMove = Script16
+FontSize = 8
+PositionX = 700
+PositionY = 500
+FontColorR = 0
+FontColorG = 0
+FontColorB = 0
+FontColorA = 255
+Sprite1Name = UIEditBox0.png
+Sprite1Rotation = 0
+Sprite1ScaleX = 1
+Sprite1ScaleY = 1
+Sprite1ColorR = 255
+Sprite1ColorG = 255
+Sprite1ColorB = 255
+Sprite1ColorA = 255
+Sprite2Name = UIEditBox1.png
+Sprite2Rotation = 0
+Sprite2ScaleX = 1
+Sprite2ScaleY = 1
+Sprite2ColorR = 255
+Sprite2ColorG = 255
+Sprite2ColorB = 255
+Sprite2ColorA = 255
+MouseFocused = 1

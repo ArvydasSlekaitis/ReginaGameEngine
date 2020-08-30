@@ -1,0 +1,493 @@
+/*
+    EUIObjectProperty.h - Contains UI object property enumeration.
+	Copyright 2004-2010 Arvydas Šlekaitis. All Rights Reserved.
+*/
+
+#ifndef REGINA_UI_EUIOBJECTPROPERTY_H
+#define REGINA_UI_EUIOBJECTPROPERTY_H
+
+#include <d3dx9.h>
+
+namespace Regina
+{
+
+namespace UI
+{
+
+enum EUIObjectProperty_Bool
+	{
+	//For: All
+	e_UIObjectProperty_Visible,
+	e_UIObjectProperty_Active,
+
+	//For: Label
+	e_UIObjectProperty_Italic,
+
+	//For: CheckBox
+	e_UIObjectProperty_Checked,
+
+	//For: CheckBox, EditBox, TextBox
+	e_UIObjectProperty_Text_Italic,
+
+	//For: EditBox
+	e_UIObjectProperty_Selected,
+
+	//For: MessageBox, EditBox
+	e_UIObjectProperty_OkButtonText_Italic,
+
+	//For: MessageBox
+	e_UIObjectProperty_MessageText_Italic,
+
+	//For: InputQuery, QuestionBox
+	e_UIObjectProperty_QuestionText_Italic,
+
+	//For: InputQuery
+	e_UIObjectProperty_InputText_Italic,
+
+	//For: QuestionBox
+	e_UIObjectProperty_YesButtonText_Italic,
+	e_UIObjectProperty_NoButtonText_Italic,
+
+	//For: Image
+	e_UIObjectProperty_AlphaIntersectionTest,
+
+	//For: CheckBox, EditBox, HorizontalScrollBar, VerticalScrollBar, TextBox, MessageBox, QuestionBox, InputQuery
+	e_UIObjectProperty_BackgroundImage_AlphaIntersectionTest,
+
+	//For: HorizontalScrollBar, VerticalScrollBar
+	e_UIObjectProperty_MarkerImage_AlphaIntersectionTest,
+
+	//For: HorizontalScrollBar
+	e_UIObjectProperty_LeftButtonImage_AlphaIntersectionTest,
+	e_UIObjectProperty_RightButtonImage_AlphaIntersectionTest,
+
+	//For: VerticalScrollBar
+	e_UIObjectProperty_UpButtonImage_AlphaIntersectionTest,
+	e_UIObjectProperty_DownButtonImage_AlphaIntersectionTest,
+
+	//For: TextBox
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_AlphaIntersectionTest,
+	e_UIObjectProperty_VerticlaScrollBar_MarkerImage_AlphaIntersectionTest,
+	e_UIObjectProperty_VerticlaScrollBar_UpButtonImage_AlphaIntersectionTest,
+	e_UIObjectProperty_VerticlaScrollBar_DownButtonImage_AlphaIntersectionTest,
+
+	//For: MessageBox, InputQuery
+	e_UIObjectProperty_OkButtonImage_AlphaIntersectionTest,
+
+	//For: QuestionBox
+	e_UIObjectProperty_YesButtonImage_AlphaIntersectionTest,
+	e_UIObjectProperty_NoButtonImage_AlphaIntersectionTest
+	};
+
+enum EUIObjectProperty_Int
+	{
+	//For: VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_MaxStep,
+	e_UIObjectProperty_MinStep,
+	e_UIObjectProperty_CurStep
+	};
+
+enum EUIObjectProperty_Float
+	{
+	//For: All, except message's
+	e_UIObjectProperty_PositionX, 
+	e_UIObjectProperty_PositionY,
+
+	//For: Label, Image
+	e_UIObjectProperty_ColorR, 
+	e_UIObjectProperty_ColorG, 
+	e_UIObjectProperty_ColorB, 
+	e_UIObjectProperty_ColorA, 
+
+	//For: Image, CheckBox, EditBox, HorizontalScrollBar, VerticalScrollBar, TextBox, MessageBox, InputQuery, QuestionBox
+	e_UIObjectProperty_ScaleX, 
+	e_UIObjectProperty_ScaleY, 
+
+	//For: Image
+	e_UIObjectProperty_Rotation,
+
+	//For: Label
+	e_UIObjectProperty_Height,
+	e_UIObjectProperty_Weight,
+
+	//For: CheckBox
+	e_UIObjectProperty_CheckMarkImage_ColorR, 
+	e_UIObjectProperty_CheckMarkImage_ColorG, 
+	e_UIObjectProperty_CheckMarkImage_ColorB, 
+	e_UIObjectProperty_CheckMarkImage_ColorA, 
+	e_UIObjectProperty_CheckMarkImage_ScaleX, 
+	e_UIObjectProperty_CheckMarkImage_ScaleY, 
+	e_UIObjectProperty_CheckMarkImage_Rotation,
+
+	//For: CheckBox, EditBox, MessageBox, InputQuery, QuestionBox, VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_BackgroundImage_ColorR, 
+	e_UIObjectProperty_BackgroundImage_ColorG, 
+	e_UIObjectProperty_BackgroundImage_ColorB, 
+	e_UIObjectProperty_BackgroundImage_ColorA, 
+	e_UIObjectProperty_BackgroundImage_ScaleX, 
+	e_UIObjectProperty_BackgroundImage_ScaleY, 
+	e_UIObjectProperty_BackgroundImage_Rotation,
+
+	//For: CheckBox, EditBox, TextBox
+	e_UIObjectProperty_Text_OffsetX, 
+	e_UIObjectProperty_Text_OffsetY, 
+	e_UIObjectProperty_Text_ColorR, 
+	e_UIObjectProperty_Text_ColorG, 
+	e_UIObjectProperty_Text_ColorB, 
+	e_UIObjectProperty_Text_ColorA, 
+	e_UIObjectProperty_Text_Height,
+	e_UIObjectProperty_Text_Weight,
+
+	//For: EditBox, InputQuery, VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_MarkerImage_OffsetX, 
+	e_UIObjectProperty_MarkerImage_OffsetY,  
+	e_UIObjectProperty_MarkerImage_ColorR, 
+	e_UIObjectProperty_MarkerImage_ColorG, 
+	e_UIObjectProperty_MarkerImage_ColorB, 
+	e_UIObjectProperty_MarkerImage_ColorA, 
+	e_UIObjectProperty_MarkerImage_ScaleX, 
+	e_UIObjectProperty_MarkerImage_ScaleY, 
+	e_UIObjectProperty_MarkerImage_Rotation,
+
+	//For: EditBox, InputQuery
+	e_UIObjectProperty_MaxTextSize,
+	e_UIObjectProperty_MarkerBlinkSpeed,
+
+	//For: EditBox, MessageBox, InputQuery, QuestionBox, VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_BackgroundImage_OffsetX, 
+	e_UIObjectProperty_BackgroundImage_OffsetY, 
+
+	//For: MessageBox, InputQuery
+	e_UIObjectProperty_OkButtonImage_OffsetX,
+	e_UIObjectProperty_OkButtonImage_OffsetY,
+	e_UIObjectProperty_OkButtonImage_ColorR,
+	e_UIObjectProperty_OkButtonImage_ColorG,
+	e_UIObjectProperty_OkButtonImage_ColorB,
+	e_UIObjectProperty_OkButtonImage_ColorA,
+	e_UIObjectProperty_OkButtonImage_ScaleX,
+	e_UIObjectProperty_OkButtonImage_ScaleY,
+	e_UIObjectProperty_OkButtonImage_Rotation,
+
+	e_UIObjectProperty_OkButtonText_OffsetX,
+	e_UIObjectProperty_OkButtonText_OffsetY,
+	e_UIObjectProperty_OkButtonText_ColorR,
+	e_UIObjectProperty_OkButtonText_ColorG,
+	e_UIObjectProperty_OkButtonText_ColorB,
+	e_UIObjectProperty_OkButtonText_ColorA,
+	e_UIObjectProperty_OkButtonText_Height,
+	e_UIObjectProperty_OkButtonText_Weight,
+
+	//For: MessageBox
+	e_UIObjectProperty_MessageText_OffsetX,
+	e_UIObjectProperty_MessageText_OffsetY,
+	e_UIObjectProperty_MessageText_ColorR,
+	e_UIObjectProperty_MessageText_ColorG,
+	e_UIObjectProperty_MessageText_ColorB,
+	e_UIObjectProperty_MessageText_ColorA,
+	e_UIObjectProperty_MessageText_Height,
+	e_UIObjectProperty_MessageText_Weight,
+
+	e_UIObjectProperty_MaxMessageTextSize,
+
+	//For: InputQuery, QuestionBox
+	e_UIObjectProperty_MaxQuestionTextSize,
+
+	e_UIObjectProperty_QuestionText_OffsetX,
+	e_UIObjectProperty_QuestionText_OffsetY,
+	e_UIObjectProperty_QuestionText_ColorR,
+	e_UIObjectProperty_QuestionText_ColorG,
+	e_UIObjectProperty_QuestionText_ColorB,
+	e_UIObjectProperty_QuestionText_ColorA,
+	e_UIObjectProperty_QuestionText_Height,
+	e_UIObjectProperty_QuestionText_Weight,
+
+	//For: InputQuery
+	e_UIObjectProperty_MaxInputTextSize,
+
+	e_UIObjectProperty_InputText_OffsetX,
+	e_UIObjectProperty_InputText_OffsetY,
+	e_UIObjectProperty_InputText_ColorR,
+	e_UIObjectProperty_InputText_ColorG,
+	e_UIObjectProperty_InputText_ColorB,
+	e_UIObjectProperty_InputText_ColorA,
+	e_UIObjectProperty_InputText_Height,
+	e_UIObjectProperty_InputText_Weight,
+
+	//For: QuestionBox
+	e_UIObjectProperty_YesButtonImage_OffsetX,
+	e_UIObjectProperty_YesButtonImage_OffsetY,
+	e_UIObjectProperty_YesButtonImage_ColorR,
+	e_UIObjectProperty_YesButtonImage_ColorG,
+	e_UIObjectProperty_YesButtonImage_ColorB,
+	e_UIObjectProperty_YesButtonImage_ColorA,
+	e_UIObjectProperty_YesButtonImage_ScaleX,
+	e_UIObjectProperty_YesButtonImage_ScaleY,
+	e_UIObjectProperty_YesButtonImage_Rotation,
+
+	e_UIObjectProperty_YesButtonText_OffsetX,
+	e_UIObjectProperty_YesButtonText_OffsetY,
+	e_UIObjectProperty_YesButtonText_ColorR,
+	e_UIObjectProperty_YesButtonText_ColorG,
+	e_UIObjectProperty_YesButtonText_ColorB,
+	e_UIObjectProperty_YesButtonText_ColorA,
+	e_UIObjectProperty_YesButtonText_Height,
+	e_UIObjectProperty_YesButtonText_Weight,
+
+	e_UIObjectProperty_NoButtonImage_OffsetX,
+	e_UIObjectProperty_NoButtonImage_OffsetY,
+	e_UIObjectProperty_NoButtonImage_ColorR,
+	e_UIObjectProperty_NoButtonImage_ColorG,
+	e_UIObjectProperty_NoButtonImage_ColorB,
+	e_UIObjectProperty_NoButtonImage_ColorA,
+	e_UIObjectProperty_NoButtonImage_ScaleX,
+	e_UIObjectProperty_NoButtonImage_ScaleY,
+	e_UIObjectProperty_NoButtonImage_Rotation,
+
+	e_UIObjectProperty_NoButtonText_OffsetX,
+	e_UIObjectProperty_NoButtonText_OffsetY,
+	e_UIObjectProperty_NoButtonText_ColorR,
+	e_UIObjectProperty_NoButtonText_ColorG,
+	e_UIObjectProperty_NoButtonText_ColorB,
+	e_UIObjectProperty_NoButtonText_ColorA,
+	e_UIObjectProperty_NoButtonText_Height,
+	e_UIObjectProperty_NoButtonText_Weight,
+
+	//For:	VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_MarkerStartPositionOffsetX,
+	e_UIObjectProperty_MarkerStartPositionOffsetY,
+
+	//For:	VerticalScrollBar
+	e_UIObjectProperty_MarkerEndPositionOffsetY,
+
+	e_UIObjectProperty_UpButtonImage_OffsetX,
+	e_UIObjectProperty_UpButtonImage_OffsetY,
+	e_UIObjectProperty_UpButtonImage_ColorR,
+	e_UIObjectProperty_UpButtonImage_ColorG,
+	e_UIObjectProperty_UpButtonImage_ColorB,
+	e_UIObjectProperty_UpButtonImage_ColorA,
+	e_UIObjectProperty_UpButtonImage_ScaleX,
+	e_UIObjectProperty_UpButtonImage_ScaleY,
+	e_UIObjectProperty_UpButtonImage_Rotation,
+
+	e_UIObjectProperty_DownButtonImage_OffsetX,
+	e_UIObjectProperty_DownButtonImage_OffsetY,
+	e_UIObjectProperty_DownButtonImage_ColorR,
+	e_UIObjectProperty_DownButtonImage_ColorG,
+	e_UIObjectProperty_DownButtonImage_ColorB,
+	e_UIObjectProperty_DownButtonImage_ColorA,
+	e_UIObjectProperty_DownButtonImage_ScaleX,
+	e_UIObjectProperty_DownButtonImage_ScaleY,
+	e_UIObjectProperty_DownButtonImage_Rotation,
+
+	//For:	HorizontalScrollBar
+	e_UIObjectProperty_MarkerEndPositionOffsetX,
+
+	e_UIObjectProperty_LeftButtonImage_OffsetX,
+	e_UIObjectProperty_LeftButtonImage_OffsetY,
+	e_UIObjectProperty_LeftButtonImage_ColorR,
+	e_UIObjectProperty_LeftButtonImage_ColorG,
+	e_UIObjectProperty_LeftButtonImage_ColorB,
+	e_UIObjectProperty_LeftButtonImage_ColorA,
+	e_UIObjectProperty_LeftButtonImage_ScaleX,
+	e_UIObjectProperty_LeftButtonImage_ScaleY,
+	e_UIObjectProperty_LeftButtonImage_Rotation,
+
+	e_UIObjectProperty_RightButtonImage_OffsetX,
+	e_UIObjectProperty_RightButtonImage_OffsetY,
+	e_UIObjectProperty_RightButtonImage_ColorR,
+	e_UIObjectProperty_RightButtonImage_ColorG,
+	e_UIObjectProperty_RightButtonImage_ColorB,
+	e_UIObjectProperty_RightButtonImage_ColorA,
+	e_UIObjectProperty_RightButtonImage_ScaleX,
+	e_UIObjectProperty_RightButtonImage_ScaleY,
+	e_UIObjectProperty_RightButtonImage_Rotation,
+
+	//For: TextBox
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_OffsetX, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_OffsetY, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_ColorR, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_ColorG, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_ColorB, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_ColorA, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_ScaleX, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_ScaleY, 
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_Rotation,
+
+	e_UIObjectProperty_VerticalScrollBar_MarkerStartPositionOffsetX,
+	e_UIObjectProperty_VerticalScrollBar_MarkerStartPositionOffsetY,
+	e_UIObjectProperty_VerticalScrollBar_MarkerEndPositionOffsetY,
+
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_OffsetX,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_OffsetY,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_ColorR,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_ColorG,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_ColorB,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_ColorA,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_ScaleX,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_ScaleY,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_Rotation,
+
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_OffsetX,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_OffsetY,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_ColorR,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_ColorG,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_ColorB,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_ColorA,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_ScaleX,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_ScaleY,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_Rotation,
+
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_OffsetX, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_OffsetY,  
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_ColorR, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_ColorG, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_ColorB, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_ColorA, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_ScaleX, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_ScaleY, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_Rotation,
+
+	e_UIObjectProperty_Text_LineDistance,
+	e_UIObjectProperty_Text_MaxTextSizeX,
+	e_UIObjectProperty_Text_MaxTextSizeY
+	};
+
+enum EUIObjectProperty_String
+	{
+	//For: Label, Image, CheckBox, EditBox, MessageBox, InputQuery, QuestionBox, VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_ScriptName_OnFrameMove, 
+	e_UIObjectProperty_ScriptName_OnRender, 
+
+	//For: Label, Image, CheckBox, EditBox
+	e_UIObjectProperty_ScriptName_OnMouseFocus, 
+	e_UIObjectProperty_ScriptName_OnMouseUnfocus, 
+
+	//For: Label, Image, Check box
+	e_UIObjectProperty_ScriptName_OnLeftClick, 
+	e_UIObjectProperty_ScriptName_OnRightClick,
+	
+	//For: Image
+	e_UIObjectProperty_TextureName,
+
+	//For: Label
+	e_UIObjectProperty_Facename,
+	e_UIObjectProperty_Line,
+
+	//For: CheckBox
+	e_UIObjectProperty_ScriptName_OnStateChange, 
+	e_UIObjectProperty_CheckMarkImage_TextureName,
+
+	//For: CheckBox, EditBox, MessageBox, InputQuery, QuestionBox, VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_BackgroundImage_TextureName,
+
+	//For: CheckBox, EditBox, TextBox
+	e_UIObjectProperty_Text_Facename,
+
+	//For: CheckBox, EditBox
+	e_UIObjectProperty_Text_Line,
+
+	//For: EditBox, InputQuery
+	e_UIObjectProperty_ScriptName_OnKeyPress,
+	e_UIObjectProperty_ScriptName_OnEnterPress,
+
+	//For: EditBox, InputQuery, VerticalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_MarkerImage_TextureName,
+
+	//For: EditBox
+	e_UIObjectProperty_ScriptName_OnSelect,
+	e_UIObjectProperty_ScriptName_OnDeselect,
+
+	//For: MessageBox, InputQuery
+	e_UIObjectProperty_ScriptName_OnOkButtonPress,
+	e_UIObjectProperty_ScriptName_OnOkButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnOkButtonMouseUnfocus,
+	e_UIObjectProperty_OkButtonImage_TextureName,
+	e_UIObjectProperty_OkButtonText_Facename,
+	e_UIObjectProperty_OkButtonText_Line,
+
+	//For: MessageBox
+	e_UIObjectProperty_ScriptName_OnMessageBoxMouseFocus,
+	e_UIObjectProperty_ScriptName_OnMessageBoxMouseUnfocus,
+
+	e_UIObjectProperty_MessageText_Facename,
+	e_UIObjectProperty_MessageText_Line,
+
+	//For: InputQuery, QuestionBox
+	e_UIObjectProperty_QuestionText_Facename,
+	e_UIObjectProperty_QuestionText_Line,
+
+	//For: InputQuery
+	e_UIObjectProperty_ScriptName_OnInputQueryMouseFocus,
+	e_UIObjectProperty_ScriptName_OnInputQueryMouseUnfocus,
+
+	e_UIObjectProperty_InputText_Facename,
+	e_UIObjectProperty_InputText_Line,
+
+	//For: QuestionBox
+	e_UIObjectProperty_ScriptName_OnYesButtonPress,
+	e_UIObjectProperty_ScriptName_OnYesButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnYesButtonMouseUnfocus,
+	e_UIObjectProperty_ScriptName_OnNoButtonPress,
+	e_UIObjectProperty_ScriptName_OnNoButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnNoButtonMouseUnfocus,
+
+	e_UIObjectProperty_ScriptName_OnQuestionBoxMouseFocus,
+	e_UIObjectProperty_ScriptName_OnQuestionBoxMouseUnfocus,
+
+	e_UIObjectProperty_YesButtonImage_TextureName,
+	e_UIObjectProperty_NoButtonImage_TextureName,
+	e_UIObjectProperty_YesButtonText_Facename,
+	e_UIObjectProperty_YesButtonText_Line,
+	e_UIObjectProperty_NoButtonText_Facename,
+	e_UIObjectProperty_NoButtonText_Line,
+
+	//For: VerticalScrollBar
+	e_UIObjectProperty_ScriptName_OnUpButtonPress,
+	e_UIObjectProperty_ScriptName_OnUpButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnUpButtonMouseUnfocus,
+	e_UIObjectProperty_ScriptName_OnDownButtonPress,
+	e_UIObjectProperty_ScriptName_OnDownButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnDownButtonMouseUnfocus,
+
+	e_UIObjectProperty_UpButtonImage_TextureName,
+	e_UIObjectProperty_DownButtonImage_TextureName,
+
+	//For: VericalScrollBar, HorizontalScrollBar
+	e_UIObjectProperty_ScriptName_OnScrollBarMouseFocus,
+	e_UIObjectProperty_ScriptName_OnScrollBarMouseUnfocus,
+	e_UIObjectProperty_ScriptName_OnStepChange,
+
+	//For:	HorizontalScrollBar
+	e_UIObjectProperty_ScriptName_OnLeftButtonPress,
+	e_UIObjectProperty_ScriptName_OnLeftButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnLeftButtonMouseUnfocus,
+	e_UIObjectProperty_ScriptName_OnRightButtonPress,
+	e_UIObjectProperty_ScriptName_OnRightButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnRightButtonMouseUnfocus,
+
+	e_UIObjectProperty_LeftButtonImage_TextureName,
+	e_UIObjectProperty_RightButtonImage_TextureName,
+
+	//For:	TextBox
+	e_UIObjectProperty_ScriptName_OnVerticalScrollBar_UpButtonPress,
+	e_UIObjectProperty_ScriptName_OnVerticalScrollBar_UpButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnVerticalScrollBar_UpButtonMouseUnfocus,
+	e_UIObjectProperty_ScriptName_OnVerticalScrollBar_DownButtonPress,
+	e_UIObjectProperty_ScriptName_OnVerticalScrollBar_DownButtonMouseFocus,
+	e_UIObjectProperty_ScriptName_OnVerticalScrollBar_DownButtonMouseUnfocus,
+	e_UIObjectProperty_ScriptName_OnTextBoxMouseFocus,
+	e_UIObjectProperty_ScriptName_OnTextBoxMouseUnfocus,
+
+	e_UIObjectProperty_VerticalScrollBar_BackgroundImage_TextureName, 
+	e_UIObjectProperty_VerticalScrollBar_MarkerImage_TextureName,
+	e_UIObjectProperty_VerticalScrollBar_UpButtonImage_TextureName,
+	e_UIObjectProperty_VerticalScrollBar_DownButtonImage_TextureName,
+
+	e_UIObjectProperty_Text_FileName
+	};
+
+}
+
+}
+#endif
+

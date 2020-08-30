@@ -1,0 +1,6 @@
+{
+if MouseFocused == 0
+MouseFocused = 1
+else
+MouseFocused = 0
+}

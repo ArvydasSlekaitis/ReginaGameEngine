@@ -1,0 +1,14 @@
+Line = Please Select Input File:
+FontName = Arial
+FontStyle = none
+FontSize = 16
+PositionX = 25
+PositionY = 25
+string OnSprite3Click
+OnSprite3Click = TextBoxScriptSprite3LC
+ColorR = 255
+string OnSprite4Click
+OnSprite4Click = TextBoxScriptSprite4LC
+ColorG = 255
+ColorB = 255
+ColorA = 255

@@ -1,0 +1,6 @@
+{
+if Checked == 0
+Sprite2ColorA = 255
+else
+Sprite2ColorA = 0
+}

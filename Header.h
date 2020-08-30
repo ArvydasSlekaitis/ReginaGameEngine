@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////////////
+//  .h
+//  Created on:      -03-2009
+//  Original author: Arvydas Slekaitis (C)
+///////////////////////////////////////////////////////////
+
+
+#ifndef _H
+#define _H
+
+
+namespace Regina
+{
+
+class C
+{
+
+
+public:
+
+
+};
+
+
+}    
+
+#endif
+
+

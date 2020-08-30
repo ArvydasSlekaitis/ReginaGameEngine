@@ -1,0 +1,15 @@
+calculateTangent false
+calculateNormal true
+hasShadows false
+drawShadows false
+hasLights true
+hasAmbientLighting true
+hasDiffuseLighting true
+hasSpecularLighting false
+renderPriority 100
+tanTexStageIndex 0
+tanTangentIndex 0
+tanBinormalIndex 0
+tanWrap 0
+mesh Room.x
+instanceName Room

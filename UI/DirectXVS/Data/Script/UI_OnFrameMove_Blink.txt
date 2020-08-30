@@ -1,0 +1,15 @@
+static bool rising(true);
+if(rising == true)
+	{
+	if(colorR < 255)
+		colorR += elapsedTime*250;
+	else
+		rising = false;
+	}
+else
+	{
+	if(colorR > 1)
+		colorR -= elapsedTime*250;
+	else
+		rising = true;
+	}

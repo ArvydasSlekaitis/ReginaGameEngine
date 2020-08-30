@@ -1,0 +1,90 @@
+///////////////////////////////////////////////////////////
+//  ParticlePhisics.h
+//  Created on:      22-07-2008
+//  Last modified:   10-03-2009
+//  Original author: Arvydas Slekaitis (C)
+///////////////////////////////////////////////////////////
+
+
+#ifndef PARTICLEPHISICS_H
+#define PARTICLEPHISICS_H
+
+#include <d3dx9.h>
+#include <assert.h>
+#include <string>
+#include <sstream>
+using namespace std;
+
+namespace Regina
+{
+
+class CParticlePhisicsManager;
+
+class CParticlePhisics 
+{
+D3DXVECTOR3 position;
+D3DXVECTOR3 velocity;
+D3DXVECTOR3 acceleration;
+D3DXVECTOR3 forceAccumulator;
+
+float damping;
+float inverseMass;
+
+float orientation;
+float angularAcceleration;
+float rotation;
+float angularDamping;
+
+unsigned   id;
+
+public:
+CParticlePhisics() : damping(1), inverseMass(0), position(0, 0, 0), velocity(0, 0, 0), acceleration(0, 0, 0), forceAccumulator(0, 0, 0), orientation(0), angularAcceleration(0), rotation(0), angularDamping(1), id(0)  {}
+D3DXVECTOR3 Position()		const { return position; }
+D3DXVECTOR3 Velocity()		const { return velocity; }
+D3DXVECTOR3 Acceleration()	const { return acceleration; }
+float Damping()				const { return damping; }
+float InverseMass()			const { return inverseMass; }
+float Mass()				const { assert(inverseMass!=0); return 1/inverseMass; }
+
+float Orientation()			const { return orientation; }
+float AngularAcceleration() const { return angularAcceleration; }
+float Rotation()			const { return rotation; }
+float AngularDamping()      const { return angularDamping; }
+
+float Speed()					  { return  D3DXVec3Length(&velocity); }
+
+void SetOrientation(float iOrientation)			{ orientation = iOrientation; }
+void SetAngularAcceleration(float iAngularAcceleration) { angularAcceleration = iAngularAcceleration; }
+void AddAngularAcceleration(float iAngularAcceleration) { angularAcceleration += iAngularAcceleration; }
+void SetRotation(float iRotation)				{ rotation = iRotation; }
+void SetAngularDamping(float iAngularDamping)	{ angularDamping = iAngularDamping; }
+
+void SetPosition(D3DXVECTOR3 iPosition)			{ position = iPosition; }
+void SetVelocity(D3DXVECTOR3 iVelocity)			{ velocity = iVelocity; }
+void SetAcceleration(D3DXVECTOR3 iAcceleration) { acceleration = iAcceleration; }
+
+void SetPosition(float iX, float iY, float iZ)		{ position.x=iX; position.y=iY; position.z=iZ; }
+void SetVelocity(float iX, float iY, float iZ)		{ velocity.x=iX; velocity.y=iY; velocity.z=iZ; }
+void SetAcceleration(float iX, float iY, float iZ)	{ acceleration.x=iX; acceleration.y=iY; acceleration.z=iZ; }
+
+void SetDamping(float iDamping) { damping = iDamping; }
+void SetInverseMass(float iInverseMass) { inverseMass = iInverseMass; }
+void SetMass(float iMass) { assert(iMass!=0); inverseMass = 1/iMass; }
+
+void ClearAccumulator() { forceAccumulator=D3DXVECTOR3(0, 0, 0); angularAcceleration=0; }
+void AddForce(D3DXVECTOR3 iForce) { forceAccumulator += iForce; }
+void AddForce(float iX, float iY, float iZ) { forceAccumulator.x += iX; forceAccumulator.y += iY; forceAccumulator.z += iZ; }
+void Integrate(float iDuration);
+void Load(string iDefinition); 
+
+unsigned ID() const { return id; }
+
+friend CParticlePhisicsManager;
+};
+
+
+}    
+
+#endif
+
+

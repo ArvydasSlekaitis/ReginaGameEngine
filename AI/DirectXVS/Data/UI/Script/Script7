@@ -1,0 +1,6 @@
+{
+if PositionX < 700
+PositionX +=100*Time
+else
+PositionX = 0
+}
